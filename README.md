@@ -57,12 +57,20 @@ design-system/
 │   │   │   └── brand-d.css
 │   │   └── sd.config.mjs           ← Style Dictionary config
 │   │
-│   └── ui/                         ← @ds/ui
-│       └── src/
-│           ├── components/
-│           │   └── Button/         ← Button.tsx + .module.css + .stories.tsx
-│           └── styles/
-│               └── global.css
+│   ├── ui/                         ← @ds/ui
+│   │   └── src/
+│   │       ├── components/
+│   │       │   └── Button/         ← Button.tsx + .module.css + .stories.tsx
+│   │       └── styles/
+│   │           └── global.css
+│   │
+│   └── ios/                        ← Swift Package (iOS/macOS)
+│       ├── Package.swift
+│       ├── Sources/DesignSystem/
+│       │   ├── Tokens/             ← DSColor, DSSpacing, DSRadius, DSTypography, DSBrand
+│       │   ├── Components/         ← DSButton (SwiftUI)
+│       │   └── Extensions/         ← Color+Hex
+│       └── Tests/
 │
 ├── .storybook/
 │   ├── main.ts                     ← config do Storybook (addons, stories glob)
@@ -184,6 +192,31 @@ Para trocar de marca em qualquer contexto:
 Na toolbar do Storybook, clique em **Marca** e selecione entre as marcas disponiveis:
 Wireframe, Brand A (iFood), Brand B (POS Verde), Brand C (POS Azul), Brand D (POS Roxo).
 O componente muda de identidade visual instantaneamente sem recarregar.
+
+---
+
+## iOS / SwiftUI
+
+O pacote `packages/ios/` contem o design system nativo para iOS/macOS via Swift Package Manager.
+
+```swift
+import DesignSystem
+
+// Botao primario
+DSButton("Confirmar", variant: .primary) {
+    print("ok")
+}
+.dsBrand(.brandA) // iFood
+
+// Botao secundario com icone
+DSButton("Cancelar", variant: .secondary, leadingIcon: "xmark") {
+    print("cancelou")
+}
+.dsBrand(.brandC) // POS Azul
+```
+
+Os tokens sao identicos aos do web — mesmas cores, espacamentos e tamanhos.
+Consulte [packages/ios/README.md](packages/ios/README.md) para documentacao completa.
 
 ---
 
