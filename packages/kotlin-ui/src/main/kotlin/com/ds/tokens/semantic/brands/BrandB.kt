@@ -19,7 +19,7 @@ val BrandBColorScheme = DSColorScheme(
     textSecondary = ColorPrimitives.Neutral400,
     textInverse   = ColorPrimitives.Neutral900,
 
-    borderDefault = ColorPrimitives.Neutral600,
+    borderDefault = ColorPrimitives.Neutral700,
 
     feedbackSuccess = ColorPrimitives.FeedbackSuccess,
     feedbackWarning = ColorPrimitives.FeedbackWarning,
