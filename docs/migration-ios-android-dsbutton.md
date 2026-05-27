@@ -4,18 +4,35 @@
 
 ---
 
+## Visao geral visual
+
+### Multi-brand, tamanhos, estados e tabela de paridade
+
+![Componente multi-brand, tamanhos, estados e tabela de features](images/migration-01-brands-sizes-states.png)
+
+### Tabela de paridade completa e comparacao de codigo (API)
+
+![Feature table e code comparison iOS vs Android](images/migration-02-features-code.png)
+
+### Arquitetura de tokens (3 camadas) e equivalencias de plataforma
+
+![Token architecture e platform equivalences](images/migration-03-tokens-equivalences.png)
+
+---
+
 ## Sumario
 
-1. [Contexto](#contexto)
-2. [Arquitetura de tokens (3 camadas)](#arquitetura-de-tokens-3-camadas)
-3. [Mapeamento de APIs](#mapeamento-de-apis)
-4. [Decisoes de migracao](#decisoes-de-migracao)
-5. [Comparacao feature-by-feature](#comparacao-feature-by-feature)
-6. [Equivalencias de plataforma](#equivalencias-de-plataforma)
-7. [Exemplos de uso](#exemplos-de-uso)
-8. [Arquivos impactados](#arquivos-impactados)
-9. [Limitacoes e trade-offs](#limitacoes-e-trade-offs)
-10. [Recomendacoes para futuras migracoes](#recomendacoes-para-futuras-migracoes)
+1. [Visao geral visual](#visao-geral-visual)
+2. [Contexto](#contexto)
+3. [Arquitetura de tokens (3 camadas)](#arquitetura-de-tokens-3-camadas)
+4. [Mapeamento de APIs](#mapeamento-de-apis)
+5. [Decisoes de migracao](#decisoes-de-migracao)
+6. [Comparacao feature-by-feature](#comparacao-feature-by-feature)
+7. [Equivalencias de plataforma](#equivalencias-de-plataforma)
+8. [Exemplos de uso](#exemplos-de-uso)
+9. [Arquivos impactados](#arquivos-impactados)
+10. [Limitacoes e trade-offs](#limitacoes-e-trade-offs)
+11. [Recomendacoes para futuras migracoes](#recomendacoes-para-futuras-migracoes)
 
 ---
 
