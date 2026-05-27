@@ -8,20 +8,20 @@ val WireframeColorScheme = DSColorScheme(
     actionPrimaryHover       = ColorPrimitives.Wireframe500,
     actionPrimarySubtle      = ColorPrimitives.Wireframe100,
     actionPrimaryForeground  = ColorPrimitives.Neutral0,
-    actionSecondaryForeground = ColorPrimitives.Wireframe400,
+    actionSecondaryForeground = ColorPrimitives.Wireframe500,
 
     backgroundDefault = ColorPrimitives.Neutral0,
-    backgroundSurface = ColorPrimitives.Neutral50,
-    backgroundHover   = ColorPrimitives.Neutral100,
+    backgroundSurface = ColorPrimitives.Wireframe100,
+    backgroundHover   = ColorPrimitives.Wireframe200,
 
-    textPrimary   = ColorPrimitives.Neutral900,
-    textSecondary = ColorPrimitives.Neutral500,
+    textPrimary   = ColorPrimitives.Wireframe500,
+    textSecondary = ColorPrimitives.Wireframe400,
     textInverse   = ColorPrimitives.Neutral0,
 
-    borderDefault = ColorPrimitives.Neutral200,
+    borderDefault = ColorPrimitives.Wireframe200,
 
-    feedbackSuccess = ColorPrimitives.FeedbackSuccess,
-    feedbackWarning = ColorPrimitives.FeedbackWarning,
-    feedbackError   = ColorPrimitives.FeedbackError,
-    feedbackInfo    = ColorPrimitives.FeedbackInfo,
+    feedbackSuccess = ColorPrimitives.Wireframe300,
+    feedbackWarning = ColorPrimitives.Wireframe300,
+    feedbackError   = ColorPrimitives.Wireframe300,
+    feedbackInfo    = ColorPrimitives.Wireframe300,
 )
