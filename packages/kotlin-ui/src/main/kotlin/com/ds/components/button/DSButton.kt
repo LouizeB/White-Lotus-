@@ -270,7 +270,7 @@ fun DSButton(
     val accessibilityModifier = modifier.semantics(mergeDescendants = true) {
         contentDescription = title
         if (isLoading) stateDescription = "Loading"
-        if (!enabled) stateDescription = "Disabled"
+        else if (!enabled) stateDescription = "Disabled"
     }
 
     DSButton(
