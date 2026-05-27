@@ -20,6 +20,8 @@ data class ButtonSizeTokens(
     val height: Dp,
     val paddingX: Dp,
     val fontSize: TextUnit,
+    val spinnerSize: Dp,
+    val iconSize: Dp,
 )
 
 object ButtonTokens {
@@ -29,20 +31,26 @@ object ButtonTokens {
     val TransitionDurationMs: Int = 150
 
     val Small = ButtonSizeTokens(
-        height   = Dp(32f),
-        paddingX = SpacingTokens.Spacing3,
-        fontSize = TypographyTokens.SizeSm,
+        height      = Dp(32f),
+        paddingX    = SpacingTokens.Spacing3,
+        fontSize    = TypographyTokens.SizeSm,
+        spinnerSize = Dp(12f),
+        iconSize    = Dp(14f),
     )
 
     val Medium = ButtonSizeTokens(
-        height   = Dp(40f),
-        paddingX = SpacingTokens.Spacing4,
-        fontSize = TypographyTokens.SizeMd,
+        height      = Dp(40f),
+        paddingX    = SpacingTokens.Spacing4,
+        fontSize    = TypographyTokens.SizeMd,
+        spinnerSize = Dp(14f),
+        iconSize    = Dp(16f),
     )
 
     val Large = ButtonSizeTokens(
-        height   = Dp(48f),
-        paddingX = SpacingTokens.Spacing6,
-        fontSize = TypographyTokens.SizeLg,
+        height      = Dp(48f),
+        paddingX    = SpacingTokens.Spacing6,
+        fontSize    = TypographyTokens.SizeLg,
+        spinnerSize = Dp(16f),
+        iconSize    = Dp(18f),
     )
 }
